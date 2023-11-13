@@ -1,0 +1,103 @@
+body {
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/97e9f5fa6e50c185d249956c6f198a2652a9217e69a59ecd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     min-height: 100vh;
+    margin: 0; /* Remove default body margin */
+
+}
+
+
+header {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px; /* Adjust font size for smaller screens */
+}
+
+nav {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+menu {
+    display: flex;
+}
+
+menu ul {
+    list-style: none;
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin: auto;
+    display: flex;
+    gap: 5px;
+}
+
+menu ul a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller screens */
+    color: white;
+    margin-top: 10%; /* Adjust margin for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+}
+
+.info img {
+    margin-left: 5%;
+    width: 30%; /* Make the image responsive */
+}
+
+.info h2 p {
+    align-items: center;
+    height: 50px;
+}
+
+.info h2 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    line-height: 40px; /* Adjust line height for smaller screens */
+    text-align: left;
+    margin-left: 5%; /* Adjust margin for smaller screens */
+    width:30%;
+}
+
+.info p {
+    width: 30%; /* Make the text responsive */
+    text-align: justify;
+    margin-left: 5%;
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 600px) {
+    header a {
+        font-size: 16px;
+    }
+
+    menu ul {
+        padding: 5px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
